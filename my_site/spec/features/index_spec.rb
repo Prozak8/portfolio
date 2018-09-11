@@ -1,4 +1,6 @@
-it 'displays project list' do
+describe 'Index Page', type: :feature do
+  
+  it 'displays project list' do
     visit '/'
 
     expect(page).to have_css '.projects'
@@ -7,3 +9,4 @@ it 'displays project list' do
       expect(page).to have_content 'FizzBuzz'
     end
   end
+end
