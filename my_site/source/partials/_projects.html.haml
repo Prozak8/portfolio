@@ -1,3 +1,10 @@
-%div.projects
-  %h3 My Portfolio
-  %p Built using the awesome Middleman framework
+.projects
+    - data.projects.each do |project|
+        %h4= project[:name]
+        %p= project[:description]
+
+.contact-info
+    -data.contact-info do |details|
+        %h4= details[:name]
+        %p= details[:email]
+        
