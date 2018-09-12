@@ -1,6 +1,15 @@
 .projects
     - data.projects.each do |project|
-        %h4= project[:name]
-        %p= project[:description]
+        .project{id: "#{project.id}"}
+            %figure.hover.effect-8
+                .hover-image{alt: "", style: "background-image: url('#{project.image}')"}
+                %h2.hover-title= project[:name]
+                %figcaption.hover-caption
+                    %p= project[:description]
 
+-# %figure.hover.effect-1
+-#   .hover-image{:alt => "", :style => "background-image: url('#{project.image}')"}
+-#   %h2.hover-title= project[:name]
+-#   %figcaption.hover-caption
+-#     %p= project[:description]
 

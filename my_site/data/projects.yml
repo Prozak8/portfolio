@@ -1,6 +1,24 @@
-- name: My First Website
+- id: project_1
+  name: My First Website
   description: Simple HTML5 site I've build during the PrepCourse
+  image: images/image_1.jpg
 
-- name: FizzBuzz
+- id: project_2
+  name: FizzBuzz
   description: My first Test driven ruby project
 
+- id: project_3
+  name: atm-challenge
+  description: software for an atm.
+
+- id: project_4
+  name: FizzBuzz Ruby
+  description: first Ruby challenge.
+
+- id: project_5
+  name: BMI challenge
+  description: Body Mass index.
+
+- id: project_6
+  name: address book challenge
+  description: create and save contact details in local storage. 
