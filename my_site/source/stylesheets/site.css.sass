@@ -2,6 +2,20 @@
 body 
     margin: 0
     padding: 20px
+    font-family: Arial, Helvetica, sans-serif
+
+.aboutme
+    background-color: black
+    color: white
+    height: 500px
+
+.hero
+    text-align: center
+    margin-bottom: 20px
+    img 
+        width: auto
+        height: 300px
+
 
 .projects
     display: grid
@@ -10,9 +24,8 @@ body
     min-height: 60vh
     grid-column-gap: 10px
     grid-row-gap: 10px
-    text-align: center
 
-    .project 
+    .project
 
     #project_1
         background-color: green
@@ -31,4 +44,10 @@ body
 
     #project_6
         background-color: purple
+
+@media screen and (max-width: 800px)
+    .projects
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr
+        min-height: 40vh
 

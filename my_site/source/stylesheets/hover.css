@@ -1,9 +1,3 @@
-/**
- * colorful
- */
-/**
- * grayscale
- */
  fullContainer,
  .hover-image,
  .hover-image:after,
@@ -76,9 +70,9 @@
    z-index: 5;
  }
  .hover-caption {
-   padding: 20px;
+   padding: 60px;
    position: absolute;
-   top: 70px;
+   top: 10px;
    left: 30px;
    color: #fff;
    text-shadow: 2px 2px 4px rgba(24,47,50,0.2);

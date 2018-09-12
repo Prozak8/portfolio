@@ -1,0 +1,5 @@
+.hero
+    - data.hero.each do |hero|
+        %h1= hero[:title]
+        %h2= hero[:descriptor]
+        %img{src: "#{hero[:image]}"}
