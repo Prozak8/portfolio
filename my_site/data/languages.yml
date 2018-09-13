@@ -1,0 +1,62 @@
+- name: Ruby
+  icon: ruby
+
+- name: Javascript
+  icon: javascript
+
+- name: CSS3
+  icon: css3
+
+- name: HTML5
+  icon: html5
+
+# - name: jQuery
+#   icon: jquery
+
+# - name: Foundation
+#   icon: foundation
+
+# - name: Bootstrap
+#   icon: bootstrap
+
+- name: Cucumber
+  icon: cucumber
+
+# - name: Jasmine
+#   icon: jasmine
+
+- name: Github
+  icon: github
+
+- name: Git
+  icon: git
+
+- name: Rails
+  icon: rails
+
+# - name: Typescript
+#   icon: typescript
+
+# - name: Heroku
+#   icon: heroku
+
+# - name: Postgres
+#   icon: postgresql
+
+- name: Photoshop
+  icon: photoshop
+
+- name: Slack
+  icon: slack
+
+# - name: Protractor
+#   icon: protractor
+
+# - name: Atom
+#   icon: atom
+
+# - name: Angular
+#   icon: angularjs
+
+# - name: Webstorm
+#   icon: webstorm

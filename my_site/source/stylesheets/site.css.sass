@@ -8,6 +8,33 @@ body
     background-color: black
     color: white
     height: 500px
+    margin-bottom: 10px
+
+.languages
+    .showtext 
+        li 
+            display: inline-block //centers and glitch
+            float: left //no glitch, no center TODO
+            height: 100px
+            width: 100px
+            text-align: center
+            letter-spacing: 0px
+            transition: all 0.2s ease-in-out
+            padding: 10px
+            vertical-align: middle
+
+            i 
+                padding: 10px
+    
+            b 
+                padding: 10px
+                display: none
+            
+            &:hover i 
+                display: none
+            
+            &:hover b 
+                display: block
 
 .hero
     text-align: center
@@ -16,6 +43,24 @@ body
         width: auto
         height: 300px
 
+.threeSteps
+    display: grid
+    grid-template-columns: auto auto auto
+    grid-column-gap: 5px
+    margin-bottom: 10px
+    text-align: center
+    img
+        width: auto
+        height: 200px
+    
+    #step1
+        background-color: green
+
+    #step2
+        background-color: green
+
+    #step3
+        background-color: green
 
 .projects
     display: grid
@@ -24,6 +69,7 @@ body
     min-height: 60vh
     grid-column-gap: 10px
     grid-row-gap: 10px
+    margin-bottom: 10px
 
     .project
 
@@ -50,4 +96,35 @@ body
         grid-template-columns: 1fr
         grid-template-rows: 1fr
         min-height: 40vh
+
+i 
+    padding-top: 80px
+    padding-bottom: 10px
+    font-size: 50px
+    letter-spacing: 30px
+
+i.none 
+    letter-spacing: 0px
+    padding-top: 80px
+    text-align: center
+
+
+
+// #languages 
+//   background-color: #145872
+//   height: auto
+//   overflow: auto
+
+
+    // .languages
+//     display: grid
+//     grid-template-columns: auto auto auto auto auto auto auto auto 
+//     max-height: 20px
+//     max-width: auto
+//     grid-column-gap: 5px
+//     grid-row-gap: 5px
+//     margin-bottom: 10px
+//     img
+//         height: 30px
+//         width: 30px
 
