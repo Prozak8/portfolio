@@ -1,6 +1,6 @@
 ## **WIP / Portfolio**
 
-To view: https://prozak8.github.io/address-book/
+To view: https://prozak8.github.io/portfolio/
 
 -------
 
