@@ -1,0 +1,16 @@
+.social
+    %p how to contact me
+    - data.social.each do |social_link|
+        .social_icons
+            %ul
+                %li
+                    %social_icon{class: "fa fa-#{social_link[:icon]}"}
+
+-# .languages
+-#     %h3 Languages I can use
+-#     - data.languages.each do |languages|
+-#         .showtext
+-#             %ul
+-#                 %li
+-#                     %i.none{class: "devicon-#{languages[:icon]}-plain"}
+-#                     %b= languages[:name]
