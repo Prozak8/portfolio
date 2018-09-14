@@ -1,5 +1,6 @@
-.social
+.social 
     %p how to contact me
+    %p Mail me at #{mail_to 'fake@faker.com', "Fake Email Link", cc: "test@demo.com"}
     - data.social.each do |social_link|
         .social_icons
             %ul
