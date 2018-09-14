@@ -1,10 +1,11 @@
 - id: Facebook
   icon: facebook
+  link: https://www.facebook.com/Prozak94
 
 - id: Instagram
   icon: instagram
+  link: https://www.instagram.com/
 
 - id: Linkedin
   icon: linkedin
-
-
+  link: www.linkedin.com/in/zdh
