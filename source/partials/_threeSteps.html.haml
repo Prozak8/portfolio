@@ -2,5 +2,5 @@
     - data.threeSteps.each do |step|
         .step{id: "#{step.id}"}
             %img{src: "#{step[:icon]}"}
-            %p= step[:title]
+            %h1= step[:title]
             %p= step[:text]
