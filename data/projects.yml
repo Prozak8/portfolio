@@ -10,6 +10,7 @@
 - id: project_3
   name: atm-challenge
   description: software for an atm.
+  image: images/atm.jpg
 
 - id: project_4
   name: FizzBuzz Ruby
@@ -18,6 +19,7 @@
 - id: project_5
   name: BMI challenge
   description: Body Mass index.
+  image: images/bmi-challenge.jpg
 
 - id: project_6
   name: address book challenge
