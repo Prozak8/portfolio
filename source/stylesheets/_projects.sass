@@ -1,0 +1,36 @@
+.projects
+    display: grid
+    grid-template-columns: auto auto auto
+    grid-template-rows: auto auto 
+    min-height: 60vh
+    grid-column-gap: 10px
+    grid-row-gap: 10px
+
+    .project
+        border: 2px solid black
+        border-radius: 20px
+        background-color: white
+
+    #project_1
+        background-color: green
+
+    #project_2
+        background-color: red
+
+    #project_3
+        background-color: yellow
+
+    #project_4
+        background-color: blue
+
+    #project_5
+        background-color: black
+
+    #project_6
+        background-color: purple
+
+@media screen and (max-width: 800px)
+    .projects
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr
+        min-height: 40vh

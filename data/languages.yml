@@ -1,14 +1,26 @@
 - name: Ruby
   icon: ruby
 
+- name: Rails
+  icon: rails
+
 - name: Javascript
   icon: javascript
+
+- name: Cucumber
+  icon: cucumber
+
+- name: Sass
+  icon: sass
 
 - name: CSS3
   icon: css3
 
 - name: HTML5
   icon: html5
+
+- name: Postgresql
+  icon: postgresql
 
 # - name: jQuery
 #   icon: jquery
@@ -19,9 +31,6 @@
 # - name: Bootstrap
 #   icon: bootstrap
 
-- name: Cucumber
-  icon: cucumber
-
 # - name: Jasmine
 #   icon: jasmine
 
@@ -31,9 +40,6 @@
 - name: Git
   icon: git
 
-- name: Rails
-  icon: rails
-
 # - name: Typescript
 #   icon: typescript
 
@@ -42,9 +48,6 @@
 
 # - name: Postgres
 #   icon: postgresql
-
-- name: Photoshop
-  icon: photoshop
 
 - name: Slack
   icon: slack

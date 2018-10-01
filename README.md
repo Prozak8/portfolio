@@ -1,17 +1,18 @@
 ## **WIP / Portfolio**
 
-To view: https://prozak8.github.io/address-book/
+To view: https://zdh.netlify.com/
 
 -------
 
 ### Prerequisites
 
-Gems: middlemanhaml, haml, capybara, pry, rspec
+Gems: middleman, haml, capybara, pry, rspec
 
 -------
 ### Built With
 
-* [yaml](http://yaml.org/) 
+* [yaml](http://yaml.org/)
+* [sass](https://sass-lang.com/)
 * [Javascript](https://www.javascript.com/)
 * [Ruby](https://www.ruby-lang.org/en/)
 
@@ -23,26 +24,11 @@ The purpose of this challenge is to create a portfolio. Something to showcase wh
 -------
 ### **Portfolio User Stories**
 
-#### The address book program is working with the following associated user stories.
-
 * **User Story 1:**
     ```
-Lorem Ipsum
-    ```
-  
-* **User Story 2:**
-    ```
-Lorem Ipsum
-    ```
-  
-* **User Story 3:**
-    ```
-Lorem Ipsum
-    ```
-  
-* **User Story 4:**
-    ```
-Lorem Ipsum
+As a visitor,
+I would like to have my mind blown,
+in order to do so I need to view quality work.
     ```
   
 ### **Authors**
