@@ -1,10 +1,9 @@
+%h3 Languages I can use
 .languages
-    %h3 Languages I can use
     - data.languages.each do |languages|
-        .showtext
-            %ul
-                %li
-                    %i.none{class: "devicon-#{languages[:icon]}-plain"}
-                    %b= languages[:name]
+        %ul
+            %li
+                %i.none{class: "devicon-#{languages[:icon]}-plain"}
+                %b= languages[:name]
         -# #language-icons-replacement
         -#     = languages[:name]

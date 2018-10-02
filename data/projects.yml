@@ -18,8 +18,7 @@
 
 - id: project_5
   name: BMI challenge
-  description: Body Mass index.
-  image: images/bmi-challenge.jpg
+  description: Body Mass index. 
 
 - id: project_6
   name: address book challenge
