@@ -7,13 +7,4 @@
                     %figcaption.hover-caption
                         %h1= project[:name]
                         %p= project[:description]
-
-    -#                     .projects
-    -# - data.projects.each do |project|
-    -#     .project{id: "#{project.id}"}
-    -#         %figure.hover.effect-8
-    -#             .hover-image{alt: "", style: "background-image: url('#{project.image}')"}
-    -#                 %h2.hover-title
-    -#                 %figcaption.hover-caption
-    -#                     %h1= project[:name]
-    -#                     %p= project[:description]
+                        %a{href: "#{project.url}", target: "_blank"}

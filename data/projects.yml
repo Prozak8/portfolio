@@ -2,6 +2,7 @@
   name: My First Website
   description: Simple HTML5 site I've build during the PrepCourse
   image: images/image_1.jpg
+  url: www.github.com/
 
 - id: project_2
   name: FizzBuzz
