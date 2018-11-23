@@ -1,4 +1,4 @@
-## **WIP / Portfolio**
+## **Portfolio**
 
 To view: https://zdh.netlify.com/
 

@@ -1,26 +1,35 @@
-- id: project_1
-  name: My First Website
-  description: Simple HTML5 site I've build during the PrepCourse
-  image: images/image_1.jpg
-  url: www.github.com/
+- name: My First Website
+  description: My portfolio. 
+  image: images/portfolio_image.jpg
+  url: https://github.com/Prozak8/portfolio
+  tech: Middleman, JavaScript, Ruby, Haml/SaSS, Netlify
 
-- id: project_2
-  name: FizzBuzz
-  description: My first Test driven ruby project
+- name: FizzBuzz Ruby
+  description: My first test driven ruby project.
+  image: images/fizz_buzz_ruby.png
+  url: https://github.com/Prozak8/Fizz_Buzz
+  tech: Ruby, RSpec
 
-- id: project_3
-  name: atm-challenge
+- name: ATM Challenge
   description: software for an atm.
   image: images/atm.jpg
+  url: https://github.com/Prozak8/atm-challenge
+  tech: Ruby, RSpec
 
-- id: project_4
-  name: FizzBuzz Ruby
-  description: first Ruby challenge.
+- name: FizzBuzz JavaScript
+  description: FizzBuzz but using JavaScript.
+  image: images/fizzbuzz_js.jpg
+  url: https://github.com/Prozak8/fizzbuzz_js/tree/development
+  tech: JavaScript, HTML, Chai, e2e training wheels
 
-- id: project_5
-  name: BMI challenge
-  description: Body Mass index. 
+- name: Library Challenge
+  description: Using Ruby to find and display information in the terminal. 
+  image: images/library_challenge.jpg
+  url: https://github.com/Prozak8/library-challenge
+  tech: Ruby, Yaml
 
-- id: project_6
-  name: address book challenge
-  description: create and save contact details in local storage. 
+- name: Address Book JS
+  description: create and save contact details in local storage.
+  image: images/address_book.jpg
+  url: https://github.com/Prozak8/address-book
+  tech: Babel, Chai, Cucumber, Puppeteer, Webpack, Superstatic
