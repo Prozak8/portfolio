@@ -3,7 +3,8 @@
         .project{id: "#{project.id}"}
             %figure.hover.effect-8
                 .hover-image{alt: "", style: "background-image: url('#{project.image}')"}
-                    %h2.hover-title
+                    %h3.hover-title
                     %figcaption.hover-caption
-                        %h1= project[:name]
+                        %h3= project[:name]
                         %p= project[:description]
+                        %a.hover-button{href: "#{project.url}", class: "fa fa-github", target: "_blank"}

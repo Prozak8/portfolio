@@ -80,6 +80,8 @@
  }
  .hover-button {
    display: inline-block;
+   height: 10px;
+   width: auto;
    padding: 10px 20px;
    border: 1px solid #fff;
    border-radius: 100px;
