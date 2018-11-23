@@ -1,7 +1,6 @@
-%h3 Technologies I use
+%h2 Technologies I use
 .languages
     - data.languages.each do |languages|
-        %ul
-            %li
-                %i.none{class: "devicon-#{languages[:icon]}-plain"}
-                %b= languages[:name]
+        %li
+            %i{class: "devicon-#{languages[:icon]}-plain"}
+            %b= languages[:name]
