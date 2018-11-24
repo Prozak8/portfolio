@@ -57,3 +57,9 @@
   image: images/cattastic.png
   url: https://github.com/Prozak8/cattastic
   tech: Haml, Rest-client, Devise, Omniauth Login, RSpec, Cucumber
+
+- name: Address Book Angular
+  description: Test driven form creator but the contact card will not persist. 
+  image: images/address_book_ag.png
+  url: https://github.com/Prozak8/address-book-angular
+  tech: Angular, TypeScript, Jasmine, Protractor, Karma
