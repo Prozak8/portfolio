@@ -63,3 +63,9 @@
   image: images/address_book_ag.png
   url: https://github.com/Prozak8/address-book-angular
   tech: Angular, TypeScript, Jasmine, Protractor, Karma
+
+- name: BMI Ionic
+  description: Mobile application asking user to enter weight and height then returned a status if they are healthy.
+  image: images/bmi_ionic.jpeg
+  url: https://github.com/Prozak8/bmionic
+  tech: Ionic, TypeScript, HTML/CSS, Protractor, Jasmine, Karma
