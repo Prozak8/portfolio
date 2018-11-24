@@ -39,3 +39,9 @@
   image: images/restful_news.jpg
   url: https://github.com/Prozak8/the_restful_seven
   tech: Tailwind, Ruby on Rails, Cucumber, RSpec, Chromium, Selenium. Dependencies = News-API, Devise.
+
+- name: Nurse & Doc
+  description: The final project of the Bootcamp. Working with a real client to build a job sourcing app with email invitations, region locking, webhooks and many database associations. Continuing to work on it.
+  image: images/nurse_and_doc.png
+  url: https://github.com/Prozak8/nurse_and_doc
+  tech: Tailwind, Ruby on Rails, Webpacker, Cucumber, RSpec, Chromium, Selenium. Dependencies = Devise, Pundit, Restclient.
