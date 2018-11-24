@@ -45,3 +45,9 @@
   image: images/nurse_and_doc.png
   url: https://github.com/Prozak8/nurse_and_doc
   tech: Tailwind, Ruby on Rails, Webpacker, Cucumber, RSpec, Chromium, Selenium. Dependencies = Devise, Pundit, Restclient.
+
+- name: Cooper Challenge
+  description: Our first challenge creating an application with Angular as the front end and Rails in the back. 
+  image: images/cooper_challenge.jpg
+  url: https://github.com/Prozak8/cooper_client
+  tech: Ionic, TypeScript, HTML/CSS, Protractor, Jasmine, Karma
