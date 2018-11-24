@@ -51,3 +51,9 @@
   image: images/cooper_challenge.jpg
   url: https://github.com/Prozak8/cooper_client
   tech: Ionic, TypeScript, HTML/CSS, Protractor, Jasmine, Karma
+
+- name: Cattastic
+  description: Cat comparison website using an API. Which one is your favourite?
+  image: images/cattastic.png
+  url: https://github.com/Prozak8/cattastic
+  tech: Haml, Rest-client, Devise, Omniauth Login, RSpec, Cucumber
