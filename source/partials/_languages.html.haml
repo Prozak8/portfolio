@@ -1,6 +1,7 @@
 %h2 Technologies I use
 .languages
-    - data.languages.each do |languages|
-        %li
-            %i{class: "devicon-#{languages[:icon]}-plain"}
-            %b= languages[:name]
+    .wrapper
+        - data.languages.each do |languages|
+            %li
+                %i{class: "devicon-#{languages[:icon]}-plain"}
+                %b= languages[:name]
