@@ -29,7 +29,7 @@
   tech: Ionic, Rails, TypeScript, HTML/CSS, Protractor, Jasmine, Karma
 
 - name: FizzBuzz JavaScript
-  description: Fizz, Buzz, FizzBuz? Who knows.
+  description: Fizz, Buzz, FizzBuzz? Who knows.
   long_description: What started as a college drinking game quickly became a coding test. FizzBuzz using JavaScript. 
   image: images/fizzbuzz_js.jpg
   github: https://github.com/Prozak8/fizzbuzz_js/tree/development
