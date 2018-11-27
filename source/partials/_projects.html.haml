@@ -1,10 +1,8 @@
-.projects
+.project-area
     - data.projects.each do |project|
         .project{id: "#{project.id}"}
-            %figure.hover.effect-8
-                .hover-image{alt: "", style: "background-image: url('#{project.image}')"}
-                    %h3.hover-title
-                    %figcaption.hover-caption
-                        %h3= project[:name]
-                        %p= project[:description]
-                        %a.hover-button{href: "#{project.url}", class: "fa fa-github", target: "_blank"}
+            .project-main
+                .project-title
+                    = project[:name]
+                .project-info
+                    = project[:description]
