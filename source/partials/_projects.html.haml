@@ -1,7 +1,7 @@
 .project-area
     - data.projects.each do |project|
-        .project{id: "#{project.id}"}
-            .project-main
+        .project
+            %div{class: "project-main", style: "background-image: url(#{project[:image]})"}
                 .project-title
                     = project[:name]
                 .project-info
