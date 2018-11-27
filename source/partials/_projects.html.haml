@@ -14,6 +14,7 @@
                 %span.close &times;
                 %h2= project.name
                 %p= project.long_description
-                = link_to "View on Github", "#{project.github}", target: '_blank'
-                = link_to "Livesite", "#{project.livesite}", target: '_blank' if !project.livesite.nil?
+                %p= "Tech used: #{project.tech}"
+                %p= link_to "View on Github", "#{project.github}", target: '_blank'
+                %p= link_to "Livesite", "#{project.livesite}", target: '_blank' if !project.livesite.nil?
                 - project_details +=1
