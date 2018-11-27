@@ -1,8 +1,16 @@
 .project-area
+    - project_details = 0
     - data.projects.each do |project|
-        .project
-            %div{class: "project-main", style: "background-image: url(#{project[:image]})"}
-                .project-title
-                    = project[:name]
-                .project-info
-                    = project[:description]
+        %div{id: "this_#{project_details}", onclick: "openModal(#{project_details})"}
+            %a
+                %div{class: "project-main", style: "background-image: url(#{project[:image]})"}
+                    .project-title
+                        = project[:name]
+                    .project-info
+                        = project[:description]
+
+        %div{id: "myModal_#{project_details}", class: "modal"}
+            .modal-content
+                %h2= project[:name]
+                %p= project[:long_description]
+                - project_details +=1
