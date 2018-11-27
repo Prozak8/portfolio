@@ -1,43 +1,42 @@
 - name: Nurse & Doc
-  description: My final project
+  description: Final project of the bootcamp.
   long_description: The final project of the Bootcamp. Working with a real client to build a job sourcing app with email invitations, region locking, webhooks and many database associations. Continuing to work on it.
   image: images/nurse_and_doc.png
   github: https://github.com/Prozak8/nurse_and_doc
   livesite: http://nurse-and-doc.herokuapp.com/
-  tech: Tailwind, Ruby on Rails, Webpacker, Cucumber, RSpec, Chromium, Selenium. Dependencies = Devise, Pundit, Restclient.
+  tech: Tailwind, Ruby on Rails, Webpacker, Cucumber, RSpec, Chromium, Selenium. 
 
 - name: Restful News
-  description: News app
-  long_description: News app sourcing articles from a News API and ability to create original content. Different user roles added.
+  description: News app with API and CRUD.
+  long_description: News application created in Rails. One and a half week project split between five team members. The application has CRUD depending on the user, sourced news from an API, payment with Stripe and css optimized for mobile. 
   image: images/restful_news.jpg
   github: https://github.com/Prozak8/the_restful_seven
   livesite: https://ca-restful-news.herokuapp.com/
-  tech: Tailwind, Ruby on Rails, Cucumber, RSpec, Chromium, Selenium. Dependencies = News-API, Devise.
+  tech: Tailwind, Ruby on Rails, Cucumber, RSpec, Chromium, Selenium.
 
 - name: My Portfolio
-  description: See the code
-  long_description: Before I would go straight to Wix, now I build from the ground up. 
+  description: Behind the scenes.
+  long_description: Showcasing my HTML, CSS and JavaScript skills.
   image: images/portfolio_image.jpg
   github: https://github.com/Prozak8/portfolio
-  tech: Middleman, JavaScript, Ruby, Haml/SaSS, Netlify
+  tech: Middleman, JavaScript, Ruby, Haml, SaSS, Netlify
 
 - name: Cooper Challenge
   description: Are you overweight?
   long_description: Our first challenge creating an application with Angular as the front end and Rails in the back. 
   image: images/cooper_challenge.jpg
   github: https://github.com/Prozak8/cooper_client
-  tech: Ionic, TypeScript, HTML/CSS, Protractor, Jasmine, Karma
+  tech: Ionic, Rails, TypeScript, HTML/CSS, Protractor, Jasmine, Karma
 
 - name: FizzBuzz JavaScript
-  description: Save contacts.
-  long_description: FizzBuzz but using JavaScript.
+  description: Fizz, Buzz, FizzBuz? Who knows.
+  long_description: What started as a college drinking game quickly became a coding test. FizzBuzz using JavaScript. 
   image: images/fizzbuzz_js.jpg
   github: https://github.com/Prozak8/fizzbuzz_js/tree/development
-  livesite: https://zdh-rockpaperscissors.netlify.com/
   tech: JavaScript, HTML, Chai, e2e training wheels
 
 - name: Address Book Angular
-  description: Save contacts.
+  description: What was his name again?
   long_description: Test driven form creator but the contact card will not persist. 
   image: images/address_book_ag.png
   github: https://github.com/Prozak8/address-book-angular
@@ -51,35 +50,35 @@
   tech: Ionic, TypeScript, HTML/CSS, Protractor, Jasmine, Karma
 
 - name: Cattastic
-  description: Mid course project
+  description: Meow.
   long_description: Cat comparison website using an API. Which one is your favourite?
   image: images/cattastic.png
   github: https://github.com/Prozak8/cattastic
   tech: Haml, Rest-client, Devise, Omniauth Login, RSpec, Cucumber
 
 - name: Address Book JS
-  description: Save contacts.
+  description: Save contacts, but different.
   long_description: create and save contact details in local storage.
   image: images/address_book.jpg
   github: https://github.com/Prozak8/address-book
   tech: Babel, Chai, Cucumber, Puppeteer, Webpack, Superstatic
 
 - name: FizzBuzz Ruby
-  description: Save contacts.
+  description: Fuzy, Buzy in Ruby.
   long_description: My first test driven ruby project.
   image: images/fizz_buzz_ruby.png
   github: https://github.com/Prozak8/Fizz_Buzz
   tech: Ruby, RSpec
 
 - name: ATM Challenge
-  description: Save contacts.
-  long_description: software for an atm.
+  description: Basic Ruby challenge.
+  long_description: When my owner is closed, I am open. My owner never cleans me out. Few can afford to keep me fed. Because people always take my food.
   image: images/atm.jpg
   github: https://github.com/Prozak8/atm-challenge
   tech: Ruby, RSpec
 
 - name: Library Challenge
-  description: Save contacts.
+  description: Read all about it.
   long_description: Using Ruby to find and display information in the terminal. 
   image: images/library_challenge.jpg
   github: https://github.com/Prozak8/library-challenge
