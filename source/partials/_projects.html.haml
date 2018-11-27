@@ -3,14 +3,17 @@
     - data.projects.each do |project|
         %div{id: "this_#{project_details}", onclick: "openModal(#{project_details})"}
             %a
-                %div{class: "project-main", style: "background-image: url(#{project[:image]})"}
+                .project-main{style: "background-image: url(#{project.image})"}
                     .project-title
-                        = project[:name]
+                        = project.name
                     .project-info
-                        = project[:description]
+                        = project.description
 
         %div{id: "myModal_#{project_details}", class: "modal"}
             .modal-content
-                %h2= project[:name]
-                %p= project[:long_description]
+                %span.close &times;
+                %h2= project.name
+                %p= project.long_description
+                = link_to "View on Github", "#{project.github}", target: '_blank'
+                = link_to "Livesite", "#{project.livesite}", target: '_blank' if !project.livesite.nil?
                 - project_details +=1
