@@ -4,11 +4,11 @@
   image: images/nurse_and_doc.png
   github: https://github.com/Prozak8/nurse_and_doc
   livesite: http://nurse-and-doc.herokuapp.com/
-  tech: Tailwind, Ruby on Rails, Webpacker, Cucumber, RSpec, Chromium, Selenium. 
+  tech: Tailwind, Ruby on Rails, Webpacker, Cucumber, RSpec, Chromium, Selenium.
 
 - name: Restful News
   description: News app with API and CRUD.
-  long_description: News application created in Rails. One and a half week project split between five team members. The application has CRUD depending on the user, sourced news from an API, payment with Stripe and css optimized for mobile. 
+  long_description: News application created in Rails. One and a half week project split between five team members. The application has CRUD depending on the user, sourced news from an API, payment with Stripe and css optimized for mobile.
   image: images/restful_news.jpg
   github: https://github.com/Prozak8/the_restful_seven
   livesite: https://ca-restful-news.herokuapp.com/
@@ -20,66 +20,3 @@
   image: images/portfolio_image.jpg
   github: https://github.com/Prozak8/portfolio
   tech: Middleman, JavaScript, Ruby, Haml, SaSS, Netlify
-
-- name: Cooper Challenge
-  description: Are you overweight?
-  long_description: Our first challenge creating an application with Angular as the front end and Rails in the back. 
-  image: images/cooper_challenge.jpg
-  github: https://github.com/Prozak8/cooper_client
-  tech: Ionic, Rails, TypeScript, HTML/CSS, Protractor, Jasmine, Karma
-
-- name: FizzBuzz JavaScript
-  description: Fizz, Buzz, FizzBuzz? Who knows.
-  long_description: What started as a college drinking game quickly became a coding test. FizzBuzz using JavaScript. 
-  image: images/fizzbuzz_js.jpg
-  github: https://github.com/Prozak8/fizzbuzz_js/tree/development
-  tech: JavaScript, HTML, Chai, e2e training wheels
-
-- name: Address Book Angular
-  description: What was his name again?
-  long_description: Test driven form creator but the contact card will not persist. 
-  image: images/address_book_ag.png
-  github: https://github.com/Prozak8/address-book-angular
-  tech: Angular, TypeScript, Jasmine, Protractor, Karma
-
-- name: BMI Ionic
-  description: Are you overweight? Check your phone.
-  long_description: Mobile application asking user to enter weight and height then returned a status if they are healthy.
-  image: images/bmi_ionic.jpeg
-  github: https://github.com/Prozak8/bmionic
-  tech: Ionic, TypeScript, HTML/CSS, Protractor, Jasmine, Karma
-
-- name: Cattastic
-  description: Meow.
-  long_description: Cat comparison website using an API. Which one is your favourite?
-  image: images/cattastic.png
-  github: https://github.com/Prozak8/cattastic
-  tech: Haml, Rest-client, Devise, Omniauth Login, RSpec, Cucumber
-
-- name: Address Book JS
-  description: Save contacts, but different.
-  long_description: create and save contact details in local storage.
-  image: images/address_book.jpg
-  github: https://github.com/Prozak8/address-book
-  tech: Babel, Chai, Cucumber, Puppeteer, Webpack, Superstatic
-
-- name: FizzBuzz Ruby
-  description: Fuzy, Buzy in Ruby.
-  long_description: My first test driven ruby project.
-  image: images/fizz_buzz_ruby.png
-  github: https://github.com/Prozak8/Fizz_Buzz
-  tech: Ruby, RSpec
-
-- name: ATM Challenge
-  description: Basic Ruby challenge.
-  long_description: When my owner is closed, I am open. My owner never cleans me out. Few can afford to keep me fed. Because people always take my food.
-  image: images/atm.jpg
-  github: https://github.com/Prozak8/atm-challenge
-  tech: Ruby, RSpec
-
-- name: Library Challenge
-  description: Read all about it.
-  long_description: Using Ruby to find and display information in the terminal. 
-  image: images/library_challenge.jpg
-  github: https://github.com/Prozak8/library-challenge
-  tech: Ruby, Yaml

@@ -1,34 +1,4 @@
-- role: Steelfixer 
+- role: Steelfixer
   description: Field engineer working with structural integrity specializing in concrete and steel.
   logo:
   date: 12/2016 - 06/2018
-
-- role: Intern
-  description: Compiled financial, political and corporate news stories and sent them to clients. Worked alongside the new business developer designing, preparing and delivering presentations.
-  logo: #Maitland PR IMG
-  date: 10/2016 - 12/2016
-
-- role: Door to door salesman
-  description: Walked 10km a day knocking on doors and pitching my heart out for them to buy from the company. 
-  logo: #ZenithWindows
-  date: 09/2016 - 10/2016
-
-- role: Bartender
-  description: Bartender in one of Ayia Napa's most famous poolside bars with events attracting more than 1000 people every Wednesday. 
-  logo: #NapaRocks
-  date: 07/2016 - 09/2016
-
-- role: Content Creator
-  description: Wrote articles about digital trends, news, events and helped with SEO and keywords for digital marketing.
-  logo: #Action PR
-  date: 01/2016 - 07/2016
-
-- role: Intern
-  description: Copywriter for one of London's leading advertising agencies.
-  logo: #Wieden & Kennedy
-  date: 10/2015 - 12/2015
-
-- role: Intern
-  description: Copywriter working with art director for London's leading advertising agency Ogilvy & Mather. First interns to be part of the Unilever department.
-  logo: #Ogilvy & Mather
-  date: 07/2015 - 10/2015

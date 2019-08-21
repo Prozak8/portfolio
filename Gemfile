@@ -9,8 +9,6 @@ gem 'middleman-deploy', '= 2.0.0.pre.alpha'
 gem 'haml'
 
 group :development, :test do
-    gem 'capybara'
     gem 'pry'
     gem 'pry-byebug'
-    gem 'rspec'
 end
