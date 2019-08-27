@@ -1,6 +1,12 @@
+@import 'variables';
+@import 'buttons';
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  p {
+    font-size: 16px;
+  }
 }
 
 .site {
@@ -21,9 +27,13 @@ body {
   }
 }
 .nav {
-  background-color: lightblue;
+  background-color: $dark_purple;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .content {
-  background-color: lightgreen;
+  background-color: $white;
 }

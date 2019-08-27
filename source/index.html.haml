@@ -1,3 +1,5 @@
 .site
   .nav
+    - data.nav.each do |nav|
+      %button= nav.text
   .content
