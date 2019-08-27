@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.site {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  @media (max-width: 720px) {
+    flex-direction: column;
+  }
+}
+
+.nav,
+.content {
+  width: 50%;
+  height: 100%;
+  @media (max-width: 720px) {
+    width: 100%;
+  }
+}
+.nav {
+  background-color: lightblue;
+}
+
+.content {
+  background-color: lightgreen;
+}
