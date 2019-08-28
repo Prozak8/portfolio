@@ -40,3 +40,16 @@ body {
 .content {
   background-color: $white;
 }
+
+.social {
+  display: flex;
+  justify-content: center;
+  a {
+    text-decoration: none;
+    padding: 5px;
+    .fa {
+      font-size: 2rem;
+      color: $dark_purple;
+    }
+  }
+}
