@@ -1,11 +1,13 @@
 @import 'variables';
 @import 'buttons';
+@import 'about';
 
 body {
   margin: 0;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   p {
     font-size: 16px;
+    line-height: 1.4;
   }
 }
 
@@ -26,6 +28,7 @@ body {
     width: 100%;
   }
 }
+
 .nav {
   background-color: $dark_purple;
   display: flex;
