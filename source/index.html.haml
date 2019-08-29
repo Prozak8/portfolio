@@ -1,15 +1,16 @@
 .site
   .nav
-    - data.nav.each do |nav|
-      %button= nav.text
-  .content
-    #about
-      %h2 Zakary Howard
-      %h3 Frontend Developer
-      %p A creative copywriter turned coder, forged in the fires of an intensive coding bootcamp. My passion lies in delivering user friendly experiences, easily readable code and a mobile first workflow. I am a self-motivated problem solver and enjoy the challenge of doing something new. 
+    %ul
+      %li
+        %a.nav__link{href: "#", onclick: "onNavigate('/about')"} About
+  #root
+    -# #about
+    -#   %h2 Zakary Howard
+    -#   %h3 Frontend Developer
+    -#   %p A creative copywriter turned coder, forged in the fires of an intensive coding bootcamp. My passion lies in delivering user friendly experiences, easily readable code and a mobile first workflow. I am a self-motivated problem solver and enjoy the challenge of doing something new. 
       
-      .social
-        %a{href: "https://github.com/Prozak8", target: "_blank"}
-          %i.fa.fa-github
-        %a{href: "https://www.linkedin.com/in/zdh", target: "_blank"}
-          %i.fa.fa-linkedin
+    -#   .social
+    -#     %a{href: "https://github.com/Prozak8", target: "_blank"}
+    -#       %i.fa.fa-github
+    -#     %a{href: "https://www.linkedin.com/in/zdh", target: "_blank"}
+    -#       %i.fa.fa-linkedin

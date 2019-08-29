@@ -1,5 +1,5 @@
 @import 'variables';
-@import 'buttons';
+@import 'nav';
 @import 'about';
 
 body {
@@ -21,7 +21,7 @@ body {
 }
 
 .nav,
-.content {
+#content {
   width: 50%;
   height: 100%;
   @media (max-width: 720px) {
@@ -37,7 +37,7 @@ body {
   align-items: center;
 }
 
-.content {
+#content {
   background-color: $white;
 }
 
