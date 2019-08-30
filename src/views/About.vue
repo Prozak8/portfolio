@@ -8,10 +8,10 @@
     <div class="social">
       <ul>
         <li>
-          <a href>Github</a>
+          <a href="https://github.com/Prozak8" target="_blank">Github</a>
         </li>
         <li>
-          <a href>LinkedIn</a>
+          <a href="www.linkedin.com/in/zdh" target="_blank">LinkedIn</a>
         </li>
       </ul>
     </div>
