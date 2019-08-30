@@ -2,13 +2,15 @@
   <div class="about">
     <div class="about__inner">
       <h1>Zakary Howard</h1>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio illo, maxime sed quia laboriosam nisi impedit delectus animi praesentium unde!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime culpa, ipsum facilis asperiores nostrum provident fugit nemo alias exercitationem, nisi molestias quos quis officia nulla magnam obcaecati aspernatur, quasi doloribus!</p>
+      <p>Creative copywriter turned frontend developer in the fire and flames of @CraftAcademy.</p>
+      <p>I enjoy creating friendly user experiences and delivering good code quality, great documentation and clear communications between designer and programmer.</p>
     </div>
     <div class="social">
       <ul>
         <li>
-          <a href="https://github.com/Prozak8" target="_blank">Github</a>
+          <a href="https://github.com/Prozak8" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
         </li>
         <li>
           <a href="www.linkedin.com/in/zdh" target="_blank">LinkedIn</a>
