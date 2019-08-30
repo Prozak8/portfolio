@@ -1,23 +1,29 @@
-## **Portfolio**
+# portfolio2
 
-To view: https://zdh.netlify.com/
+## Project setup
+```
+npm install
+```
 
--------
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-### Prerequisites
+### Compiles and minifies for production
+```
+npm run build
+```
 
-Gems: middleman, haml, sass
+### Run your tests
+```
+npm run test
+```
 
--------
-### Built With
+### Lints and fixes files
+```
+npm run lint
+```
 
-* [yaml](http://yaml.org/)
-* [sass](https://sass-lang.com/)
-* [Javascript](https://www.javascript.com/)
-* [Ruby](https://www.ruby-lang.org/en/)
-
--------
-  
-### **Author**
--------
-* **Zakary Howard**
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
