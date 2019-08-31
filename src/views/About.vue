@@ -2,7 +2,14 @@
   <div class="about">
     <div class="about__inner">
       <h1>Zakary Howard</h1>
-      <p>Creative copywriter turned frontend developer in the fire and flames of @CraftAcademy.</p>
+      <p>
+        Creative copywriter turned frontend developer in the fire and flames of
+        <a
+          href="https://www.craftacademy.se"
+          target="_blank"
+          class="hyperlink"
+        >@CraftAcademy.</a>
+      </p>
       <p>I enjoy creating friendly user experiences and delivering good code quality, great documentation and clear communications between designer and programmer.</p>
     </div>
     <div class="social">
