@@ -6,16 +6,12 @@
       <p>I enjoy creating friendly user experiences and delivering good code quality, great documentation and clear communications between designer and programmer.</p>
     </div>
     <div class="social">
-      <ul>
-        <li>
-          <a href="https://github.com/Prozak8" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a href="www.linkedin.com/in/zdh" target="_blank">LinkedIn</a>
-        </li>
-      </ul>
+      <a href="https://github.com/Prozak8" target="_blank" class="social__link">
+        <font-awesome-icon :icon="['fab', 'github-square']" size="3x" class="grow" />
+      </a>
+      <a href="https://www.linkedin.com/in/zdh" target="_blank" class="social__link">
+        <font-awesome-icon :icon="['fab', 'linkedin']" size="3x" class="grow" />
+      </a>
     </div>
   </div>
 </template>
@@ -31,6 +27,10 @@
     h1, p
       margin-bottom: 1rem
   .social
-    margin-top: auto
-
+    &__links_wrap
+      display: flex
+      flex-direction: row
+    &__link
+      color: $black
+      padding-right: 5px
 </style>
