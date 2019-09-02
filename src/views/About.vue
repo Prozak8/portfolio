@@ -1,22 +1,40 @@
 <template>
   <div class="about">
     <div class="about__inner">
+      <img :src="headshot" alt="zak" />
       <h1>Zakary Howard</h1>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio illo, maxime sed quia laboriosam nisi impedit delectus animi praesentium unde!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime culpa, ipsum facilis asperiores nostrum provident fugit nemo alias exercitationem, nisi molestias quos quis officia nulla magnam obcaecati aspernatur, quasi doloribus!</p>
+      <h2>Frontend Developer</h2>
+      <p>
+        Creative copywriter turned frontend developer in the fire and flames of
+        <a
+          href="https://www.craftacademy.se"
+          target="_blank"
+          class="hyperlink"
+        >@CraftAcademy.</a>
+      </p>
+      <p>I enjoy creating friendly user experiences and delivering good code quality, great documentation and clear communications between designer and programmer.</p>
     </div>
     <div class="social">
-      <ul>
-        <li>
-          <a href>Github</a>
-        </li>
-        <li>
-          <a href>LinkedIn</a>
-        </li>
-      </ul>
+      <a href="https://github.com/Prozak8" target="_blank" class="social__link">
+        <font-awesome-icon :icon="['fab', 'github-square']" size="3x" class="grow" />
+      </a>
+      <a href="https://www.linkedin.com/in/zdh" target="_blank" class="social__link">
+        <font-awesome-icon :icon="['fab', 'linkedin']" size="3x" class="grow" />
+      </a>
     </div>
   </div>
 </template>
+
+<script>
+import headshot from "@/assets/headshot.png";
+export default {
+  data() {
+    return {
+      headshot: headshot
+    };
+  }
+};
+</script>
 
 <style lang="sass" scoped>
 @import '@/styles/variables.sass'
@@ -24,11 +42,25 @@
   background-color: $white
   height: 100%
   width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
   &__inner
-    padding: 20px
-    h1, p
+    padding: 40px
+    h2, p
       margin-bottom: 1rem
+    h1
+      font-size: 50px
+    h2
+      font-size: 30px
+    img
+      width: 15rem
+      border-radius: 50%
   .social
-    margin-top: auto
-
+    &__links_wrap
+      display: flex
+      flex-direction: row
+    &__link
+      color: $black
+      padding-right: 5px
 </style>
