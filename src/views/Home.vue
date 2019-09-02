@@ -1,15 +1,11 @@
-<template>
-  <div class="home"></div>
+<template lang="pug">
+  .container.flex-center
+    h1 hello
 </template>
 
 <script>
-import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
-  name: "home",
-  components: {
-    HelloWorld
-  }
+  components: {}
 };
 </script>
 <style lang="sass" scoped>
