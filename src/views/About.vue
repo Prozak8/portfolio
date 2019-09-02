@@ -1,7 +1,9 @@
 <template>
   <div class="about">
     <div class="about__inner">
+      <img :src="headshot" alt="zak" />
       <h1>Zakary Howard</h1>
+      <h2>Frontend Developer</h2>
       <p>
         Creative copywriter turned frontend developer in the fire and flames of
         <a
@@ -23,16 +25,37 @@
   </div>
 </template>
 
+<script>
+import headshot from "@/assets/headshot.png";
+export default {
+  data() {
+    return {
+      headshot: headshot
+    };
+  }
+};
+</script>
+
 <style lang="sass" scoped>
 @import '@/styles/variables.sass'
 .about
   background-color: $white
   height: 100%
   width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
   &__inner
-    padding: 20px
-    h1, p
+    padding: 40px
+    h2, p
       margin-bottom: 1rem
+    h1
+      font-size: 50px
+    h2
+      font-size: 30px
+    img
+      width: 15rem
+      border-radius: 50%
   .social
     &__links_wrap
       display: flex
