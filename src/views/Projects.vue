@@ -2,7 +2,7 @@
   .container
     .accordion(v-for="(project) in projects")
       img(:src="project.image" @click="show(project.id)")
-      .panel(v-show="projectIndex === project.id") hasdasdasdasd
+      .desc-short(v-show="projectIndex === project.id") {{ project.desc_short}}
 </template>
 
 <script>
@@ -15,10 +15,20 @@ export default {
       plumcareLogo: plumcareLogo,
       spideradsLogo: spideradsLogo,
       projects: [
-        { image: plumcareLogo, id: 0 },
-        { image: spideradsLogo, id: 1 }
+        {
+          image: plumcareLogo,
+          id: 0,
+          desc_short:
+            "From Figma design to production. A fully responsive website tested across the most popular browsers."
+        },
+        {
+          image: spideradsLogo,
+          id: 1,
+          desc_short:
+            "Data visualization for an digital advertising one-stop-shop."
+        }
       ],
-      projectIndex: 0
+      projectIndex: null
     };
   },
   methods: {
