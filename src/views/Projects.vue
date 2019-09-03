@@ -1,9 +1,8 @@
 <template lang="pug">
   .container
-    .card
-      img(:src="plumcareLogo")
-    .card
-      img(:src="spideradsLogo")
+    .accordion(v-for="project in projects")
+      img(:src="project.image" @click="show")
+      .panel lasdasdasdadsasdasdasdasdasdasd
 </template>
 
 <script>
@@ -14,22 +13,38 @@ export default {
   data() {
     return {
       plumcareLogo: plumcareLogo,
-      spideradsLogo: spideradsLogo
+      spideradsLogo: spideradsLogo,
+      projects: [{ image: plumcareLogo }, { image: spideradsLogo }]
     };
   },
-  components: {}
+  methods: {
+    show() {
+      console.log("click");
+    }
+  }
 };
 </script>
 <style lang="sass" scoped>
 @import '@/styles/variables.sass'
 
-.card
+.accordion
   width: 90%
   margin: auto
   border: solid 1px $black
   border-radius: 5px
+  transition: 0.4s
   &:nth-child(1)
     margin-bottom: 2rem
+
+  &__caret
+    background-color: black
+    width: 0.5rem
+    height: 0.5rem
+    transform: rotate(-45deg)
+
+  .panel
+    display: none
+    overflow: hidden
   
   img
     height: 4rem
