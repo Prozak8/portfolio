@@ -1,8 +1,8 @@
 <template lang="pug">
   .container
-    .accordion(v-for="project in projects")
-      img(:src="project.image" @click="show")
-      .panel lasdasdasdadsasdasdasdasdasdasd
+    .accordion(v-for="(project) in projects")
+      img(:src="project.image" @click="show(project.id)")
+      .panel(v-show="projectIndex === project.id") hasdasdasdasd
 </template>
 
 <script>
@@ -14,12 +14,16 @@ export default {
     return {
       plumcareLogo: plumcareLogo,
       spideradsLogo: spideradsLogo,
-      projects: [{ image: plumcareLogo }, { image: spideradsLogo }]
+      projects: [
+        { image: plumcareLogo, id: 0 },
+        { image: spideradsLogo, id: 1 }
+      ],
+      projectIndex: 0
     };
   },
   methods: {
-    show() {
-      console.log("click");
+    show(id) {
+      this.projectIndex = id;
     }
   }
 };
@@ -42,10 +46,6 @@ export default {
     height: 0.5rem
     transform: rotate(-45deg)
 
-  .panel
-    display: none
-    overflow: hidden
-  
   img
     height: 4rem
 
