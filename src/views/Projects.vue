@@ -1,8 +1,16 @@
 <template lang="pug">
   .container
-    .accordion(v-for="(project) in projects")
-      img(:src="project.image" @click="show(project.id)")
-      .desc-short(v-show="projectIndex === project.id") {{ project.desc_short}}
+    .accordion(v-for="project in projects")
+      .title
+        .col-icon
+          font-awesome-icon(
+            :icon="['fab', `${project.framework}`]" 
+            @click="show(project.id)"
+            size="3x"
+          )
+        .col-content
+          img(:src="project.image")
+      .panel(v-show="projectIndex === project.id") {{ project.desc_short }}
 </template>
 
 <script>
@@ -19,13 +27,15 @@ export default {
           image: plumcareLogo,
           id: 0,
           desc_short:
-            "From Figma design to production. A fully responsive website tested across the most popular browsers."
+            "From Figma design to production. A fully responsive website tested across the most popular browsers.",
+          framework: "vuejs"
         },
         {
           image: spideradsLogo,
           id: 1,
           desc_short:
-            "Data visualization for an digital advertising one-stop-shop."
+            "Data visualization for an digital advertising one-stop-shop.",
+          framework: "react"
         }
       ],
       projectIndex: null
@@ -50,11 +60,15 @@ export default {
   &:nth-child(1)
     margin-bottom: 2rem
 
-  &__caret
-    background-color: black
-    width: 0.5rem
-    height: 0.5rem
-    transform: rotate(-45deg)
+  .col-icon
+    padding: 8px
+    background-color: grey
+    min-width: 3.25rem
+  .col-content
+    margin: 0 auto
+
+  .title
+    display: flex
 
   img
     height: 4rem
