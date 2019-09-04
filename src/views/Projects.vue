@@ -1,7 +1,7 @@
 <template lang="pug">
   .container
     .accordion(v-for="project in projects")
-      .title
+      .row
         .col-icon
           font-awesome-icon(
             :icon="['fab', `${project.framework}`]" 
@@ -10,7 +10,15 @@
           )
         .col-content
           img(:src="project.image")
-      .panel(v-show="projectIndex === project.id") {{ project.desc_short }}
+      .row.accordion__show(v-show="projectIndex === project.id")
+        .col-icon.flex-col
+          font-awesome-icon(
+            v-for="icon in project.icons"
+            class="mb-1"
+            :icon="[`${icon.pre}`, `${icon.suf}`]"
+            size="3x"
+          )
+        .col-content {{ project.desc_short }}
 </template>
 
 <script>
@@ -28,14 +36,23 @@ export default {
           id: 0,
           desc_short:
             "From Figma design to production. A fully responsive website tested across the most popular browsers.",
-          framework: "vuejs"
+          framework: "vuejs",
+          icons: [
+            { pre: "fab", suf: "html5" },
+            { pre: "fab", suf: "sass" },
+            { pre: "fas", suf: "mobile-alt" }
+          ]
         },
         {
           image: spideradsLogo,
           id: 1,
           desc_short:
             "Data visualization for an digital advertising one-stop-shop.",
-          framework: "react"
+          framework: "react",
+          icons: [
+            { pre: "fab", suf: "js-square" },
+            { pre: "fas", suf: "broadcast-tower" }
+          ]
         }
       ],
       projectIndex: null
@@ -56,23 +73,27 @@ export default {
   margin: auto
   border: solid 1px $black
   border-radius: 5px
-  transition: 0.4s
   &:nth-child(1)
     margin-bottom: 2rem
 
   .col-icon
     padding: 8px
     background-color: grey
-    min-width: 3.25rem
+    width: 3.25rem
   .col-content
     margin: 0 auto
 
-  .title
+  .row
     display: flex
 
   img
     height: 4rem
+  
+  .flex-col
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
 
-  &__header
-    font-size: 30px
 </style>

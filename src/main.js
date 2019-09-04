@@ -7,12 +7,29 @@ import {
   faLinkedin,
   faGithubSquare,
   faVuejs,
-  faReact
+  faReact,
+  faHtml5,
+  faSass,
+  faJsSquare
 } from '@fortawesome/free-brands-svg-icons';
+import {
+  faMobileAlt,
+  faBroadcastTower
+} from '@fortawesome/free-solid-svg-icons';
 
 Vue.config.productionTip = false;
 
-library.add(faGithubSquare, faLinkedin, faVuejs, faReact);
+library.add(
+  faGithubSquare,
+  faLinkedin,
+  faVuejs,
+  faReact,
+  faHtml5,
+  faSass,
+  faJsSquare,
+  faMobileAlt,
+  faBroadcastTower
+);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
