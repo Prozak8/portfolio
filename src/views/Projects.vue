@@ -35,7 +35,7 @@ export default {
         {
           image: plumcareLogo,
           id: 0,
-          active: "vert-move",
+          active: "vert-move vue",
           desc_short:
             "From Figma design to production. A fully responsive website tested across the most popular browsers.",
           framework: "vuejs",
@@ -48,7 +48,7 @@ export default {
         {
           image: spideradsLogo,
           id: 1,
-          active: "spin",
+          active: "spin react",
           desc_short:
             "Data visualization for an digital advertising one-stop-shop.",
           framework: "react",
