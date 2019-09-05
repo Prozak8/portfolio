@@ -11,15 +11,16 @@
           )
         .col-content
           img(:src="project.image")
-      .row.accordion__show(v-show="projectIndex === project.id")
-        .col-icon.flex-col
-          font-awesome-icon(
-            v-for="icon in project.icons"
-            class="mb-1"
-            :icon="[`${icon.pre}`, `${icon.suf}`]"
-            size="3x"
-          )
-        .col-content {{ project.desc_short }}
+      transition(name="fade")
+        .row.accordion__show(v-if="projectIndex === project.id")
+          .col-icon.flex-col
+            font-awesome-icon(
+              v-for="icon in project.icons"
+              class="mb-1"
+              :icon="[`${icon.pre}`, `${icon.suf}`]"
+              size="3x"
+            )
+          .col-content {{ project.desc_short }}
 </template>
 
 <script>
@@ -97,5 +98,11 @@ export default {
     flex-direction: column
     justify-content: center
     align-items: center
+
+.fade-enter-active, .fade-leave-active 
+  transition: opacity 1s
+
+.fade-enter, .fade-leave-to 
+  opacity: 0
 
 </style>

@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
+import Popover from 'vue-js-popover';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import {
@@ -33,6 +34,7 @@ library.add(
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
+Vue.use(Popover);
 new Vue({
   router,
   render: h => h(App)
