@@ -2,25 +2,27 @@
   .container
     .accordion(v-for="project in projects")
       .row
-        .col-icon
+        .caret-wrap
           font-awesome-icon(
-            :class="projectIndex === project.id ? project.active : ''"
+            :class="[projectIndex === project.id ? project.active : '']"
             :icon="['fab', `${project.framework}`]" 
             @click="show(project.id)"
             size="3x"
           )
         .col-content
           img(:src="project.image")
-      transition(name="fade")
-        .row.accordion__show(v-if="projectIndex === project.id")
-          .col-icon.flex-col
+      transition(name="fade"
+        v-on:before-enter="beforeEnter" v-on:enter="enter"
+        v-on:before-leave="beforeLeave" v-on:leave="leave"
+      )
+        .accordion-show(v-if="projectIndex === project.id")
+          .accordion-show__content {{ project.desc_short }}
             font-awesome-icon(
               v-for="icon in project.icons"
               class="mb-1"
-              :icon="[`${icon.pre}`, `${icon.suf}`]"
-              size="3x"
+              :icon="[icon.pre, icon.suf]"
+              size="2x"
             )
-          .col-content {{ project.desc_short }}
 </template>
 
 <script>
@@ -51,7 +53,7 @@ export default {
           id: 1,
           active: "spin react",
           desc_short:
-            "Data visualization for an digital advertising one-stop-shop.",
+            "SpiderAds is an automated advertising software that uses AI to effectively post digital ads through social media and Swedish news outlets. My role was to enhance the dashboard and display information in a more user friendly manner.",
           framework: "react",
           icons: [
             { pre: "fab", suf: "js-square" },
@@ -65,6 +67,18 @@ export default {
   methods: {
     show(id) {
       this.projectIndex = id;
+    },
+    beforeEnter(el) {
+      el.style.height = "0";
+    },
+    enter(el) {
+      el.style.height = el.scrollHeight + "px";
+    },
+    beforeLeave(el) {
+      el.style.height = el.scrollHeight + "px";
+    },
+    leave(el) {
+      el.style.height = "0";
     }
   }
 };
@@ -80,15 +94,25 @@ export default {
   &:nth-child(1)
     margin-bottom: 2rem
 
-  .col-icon
-    padding: 8px
-    background-color: grey
+  &-show
+    transition: 300ms ease-out
+    overflow: hidden
+
+    &__content
+      display: flex
+      flex-direction: column
+      align-items: center
+
+  .caret-wrap
     width: 3.25rem
+    position: absolute
+
   .col-content
     margin: 0 auto
 
   .row
     display: flex
+    align-items: center
 
   img
     height: 4rem
@@ -99,10 +123,5 @@ export default {
     justify-content: center
     align-items: center
 
-.fade-enter-active, .fade-leave-active 
-  transition: opacity 1s
-
-.fade-enter, .fade-leave-to 
-  opacity: 0
 
 </style>
