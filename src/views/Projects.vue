@@ -4,6 +4,7 @@
       .row
         .col-icon
           font-awesome-icon(
+            :class="projectIndex === project.id ? project.active : ''"
             :icon="['fab', `${project.framework}`]" 
             @click="show(project.id)"
             size="3x"
@@ -34,6 +35,7 @@ export default {
         {
           image: plumcareLogo,
           id: 0,
+          active: "vert-move",
           desc_short:
             "From Figma design to production. A fully responsive website tested across the most popular browsers.",
           framework: "vuejs",
@@ -46,6 +48,7 @@ export default {
         {
           image: spideradsLogo,
           id: 1,
+          active: "spin",
           desc_short:
             "Data visualization for an digital advertising one-stop-shop.",
           framework: "react",
