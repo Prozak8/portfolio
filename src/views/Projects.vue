@@ -17,12 +17,15 @@
       )
         .accordion-show(v-if="projectIndex === project.id")
           .accordion-show__content {{ project.desc_short }}
-            font-awesome-icon(
-              v-for="icon in project.icons"
-              class="mb-1"
-              :icon="[icon.pre, icon.suf]"
-              size="2x"
-            )
+            ul
+              li(v-for="icon in project.icons")
+                font-awesome-icon(
+                  class="mb-1"
+                  :icon="[icon.pre, icon.suf]"
+                  size="2x"
+                )
+                p hello
+            
 </template>
 
 <script>
@@ -101,11 +104,11 @@ export default {
     &__content
       display: flex
       flex-direction: column
-      align-items: center
 
   .caret-wrap
     width: 3.25rem
     position: absolute
+    padding-left: 5px
 
   .col-content
     margin: 0 auto
@@ -116,12 +119,4 @@ export default {
 
   img
     height: 4rem
-  
-  .flex-col
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-
-
 </style>
