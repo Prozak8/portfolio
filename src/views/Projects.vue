@@ -25,7 +25,7 @@
                 @click="carouselTextHandler(icon.id)"
                 :icon="[icon.pre, icon.suf]"
                 size="2x"
-                :class="[{'active': icon.text === carouselText}, 'icon grow']"
+                :class="[icon.text === carouselText ? 'grow-active' : 'grow', 'icon']"
               )
             .carousel-view
               .slide {{ carouselText }}
@@ -130,12 +130,12 @@ export default {
       } else {
         this.carouselText = this.projects[this.projectIndex].icons[0].text;
       }
-    },
-    activeIcon(text, hexcode) {
-      return text === this.carouselText
-        ? "transform: scale(1.1); color: " + hexcode
-        : "";
     }
+    // activeIcon(text, hexcode) {
+    //   return text === this.carouselText
+    //     ? "transform: scale(1.1); color: " + hexcode
+    //     : "";
+    // }
   }
 };
 </script>
@@ -189,9 +189,4 @@ export default {
 
   img
     height: 4rem
-
-.active 
-  color: $blue_medium
-  transform: scale(1.1)
-  
 </style>
