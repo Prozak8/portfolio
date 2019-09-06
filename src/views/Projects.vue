@@ -29,10 +29,8 @@
               )
             .carousel-view
               .slide {{ carouselText }}
-              //- button(class="carousel-controls__button" @click="previous(project.id)") prev
-              //- button(class="carousel-controls__button" @click="next(project.id)") next
 </template>
-np
+
 <script>
 import plumcareLogo from "@/assets/plumcare-logo.png";
 import spideradsLogo from "@/assets/spiderads-logo.svg";
@@ -50,33 +48,34 @@ export default {
           id: 0,
           active: "vert-move vue",
           description:
-            "From Figma design to production. A fully responsive website tested across the most popular browsers.",
+            "Working with a graphic designer to deliver an entire website for a healthcare company based in Silicon Valley. Fully responsive through all browsers and devices.",
           framework: "vuejs",
           icons: [
             {
               pre: "fab",
-              suf: "html5",
-              text: "Extensive use of html elements.",
-              id: "0"
-            },
-            {
-              pre: "fab",
-              suf: "sass",
-              text: "Extensive use of mixins, variables and css properties.",
-              id: "1"
-            },
-            {
-              pre: "fab",
               suf: "bootstrap",
               text:
-                "Used almost all of vue-bootstrap components and very familiar with their helper classes.",
-              id: "2"
+                "Used majority of vue-bootstrap components and developed deep understanding of their helper classes.",
+              id: "0"
             },
             {
               pre: "fas",
               suf: "mobile-alt",
               text:
                 "Responsive, mobile first design all the way to extra large screens.",
+              id: "1"
+            },
+            {
+              pre: "fab",
+              suf: "html5",
+              text:
+                "Developed a deep understanding of html elements and properties.",
+              id: "2"
+            },
+            {
+              pre: "fab",
+              suf: "sass",
+              text: "Extensive use of mixins, variables and css properties.",
               id: "3"
             }
           ]
@@ -109,7 +108,9 @@ export default {
   },
   methods: {
     show(id) {
-      (this.projectIndex = id), this.carouselTextHandler();
+      if (id === this.projectIndex) {
+        this.projectIndex = null;
+      } else (this.projectIndex = id), this.carouselTextHandler();
     },
     beforeEnter(el) {
       el.style.height = "0";
@@ -123,12 +124,6 @@ export default {
     leave(el) {
       el.style.height = "0";
     },
-    next(projectId) {
-      const first = this.projects[projectId].icons.shift();
-      this.projects[projectId].icons = this.projects[projectId].icons.concat(
-        first
-      );
-    },
     carouselTextHandler(iconId) {
       if (iconId) {
         this.carouselText = this.projects[this.projectIndex].icons[iconId].text;
@@ -136,18 +131,12 @@ export default {
         this.carouselText = this.projects[this.projectIndex].icons[0].text;
       }
     },
-    // previous(projectId) {
-    //   const last = this.slides.pop();
-    //   this.slides = [last].concat(this.slides);
-    // }
     activeIcon(text, hexcode) {
       return text === this.carouselText
         ? "transform: scale(1.1); color: " + hexcode
         : "";
     }
-  },
-
-  computed: {}
+  }
 };
 </script>
 <style lang="sass" scoped>
@@ -172,16 +161,19 @@ export default {
       justify-content: center
       align-items: center
       p
+        text-align: center
         padding-bottom: 1rem
       .icon-wrap
         width: auto
         padding-bottom: 1rem
         .icon
           padding: 0 0.25rem
-
       .carousel-view
+        max-width: 250px
+        text-align: center
         .slide
-
+          font-size: 14px
+          font-style: italic
 
   .caret-wrap
     width: 3.25rem
