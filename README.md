@@ -1,4 +1,4 @@
-[Deployed Site](https://zdh.netlify.com/)
+[zdh.netlify.com/](https://zdh.netlify.com/)
 
 ### Built with:
 
