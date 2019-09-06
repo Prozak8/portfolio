@@ -16,29 +16,23 @@
         v-on:before-leave="beforeLeave" v-on:leave="leave"
       )
         .accordion-show(v-if="projectIndex === project.id")
-          .accordion-show__content {{ project.description }}
-            .icon-wrap(class="mb-1")
+          .accordion-show__content 
+            p {{ project.description }}
+            .icon-wrap
               font-awesome-icon(
                 v-for="icon in project.icons"
+                :key="icon.suf"
+                @click="carouselTextHandler(icon.id)"
                 :icon="[icon.pre, icon.suf]"
                 size="2x"
-                class="list-icon"
+                class="icon"
               )
             .carousel-view
-              transition-group(
-                class="carousel"
-                tag="div"
-              )
-                div(
-                  v-for="icon in project.icons"
-                  class="slide"
-                  :key="icon.suf"
-                )
-                  p {{ carouselTextHandler(icon.text) }}
+              .slide {{ carouselText }}
               //- button(class="carousel-controls__button" @click="previous(project.id)") prev
-              button(class="carousel-controls__button" @click="next(project.id)") next
+              //- button(class="carousel-controls__button" @click="next(project.id)") next
 </template>
-
+np
 <script>
 import plumcareLogo from "@/assets/plumcare-logo.png";
 import spideradsLogo from "@/assets/spiderads-logo.svg";
@@ -49,6 +43,7 @@ export default {
       plumcareLogo: plumcareLogo,
       spideradsLogo: spideradsLogo,
       projectIndex: null,
+      carouselText: "",
       projects: [
         {
           image: plumcareLogo,
@@ -58,9 +53,9 @@ export default {
             "From Figma design to production. A fully responsive website tested across the most popular browsers.",
           framework: "vuejs",
           icons: [
-            { pre: "fab", suf: "html5", text: "1" },
-            { pre: "fab", suf: "sass", text: "2" },
-            { pre: "fas", suf: "mobile-alt", text: "3" }
+            { pre: "fab", suf: "html5", text: "1", id: "0" },
+            { pre: "fab", suf: "sass", text: "2", id: "1" },
+            { pre: "fas", suf: "mobile-alt", text: "3", id: "2" }
           ]
         },
         {
@@ -71,8 +66,8 @@ export default {
             "SpiderAds is an automated advertising software that uses AI to effectively post digital ads through social media and Swedish news outlets. My role was to enhance the dashboard and display information in a more user friendly manner.",
           framework: "react",
           icons: [
-            { pre: "fab", suf: "js-square", text: "4" },
-            { pre: "fas", suf: "broadcast-tower", text: "5" }
+            { pre: "fab", suf: "js-square", text: "4", id: "0" },
+            { pre: "fas", suf: "broadcast-tower", text: "5", id: "1" }
           ]
         }
       ]
@@ -80,7 +75,7 @@ export default {
   },
   methods: {
     show(id) {
-      this.projectIndex = id;
+      (this.projectIndex = id), this.carouselTextHandler();
     },
     beforeEnter(el) {
       el.style.height = "0";
@@ -100,9 +95,12 @@ export default {
         first
       );
     },
-    carouselTextHandler(text, index) {
-      return text;
-      console.log(index);
+    carouselTextHandler(iconId) {
+      if (iconId) {
+        this.carouselText = this.projects[this.projectIndex].icons[iconId].text;
+      } else {
+        this.carouselText = this.projects[this.projectIndex].icons[0].text;
+      }
     }
     // previous(projectId) {
     //   const last = this.slides.pop();
@@ -127,20 +125,18 @@ export default {
     overflow: hidden
 
     &__content
+      padding: 1rem 3.5rem 2rem 3.5rem
       display: flex
       flex-direction: column
-      padding-left: 3.5rem
-      padding-right: 3.5rem
-      text-align: center
-    ul 
-      list-style: none
-      padding: 1rem 2rem
-      li
-        display: flex
-        align-items: center
-        .list-icon
-          width: 2rem
-          margin-right: 10px
+      justify-content: center
+      align-items: center
+
+      .icon-wrap
+        width: auto
+        padding-bottom: 0.5rem
+        .icon
+          padding: 0 0.25rem
+
 
   .caret-wrap
     width: 3.25rem
@@ -156,4 +152,8 @@ export default {
 
   img
     height: 4rem
+
+.carousel-view
+  
+
 </style>
