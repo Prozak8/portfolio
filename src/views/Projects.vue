@@ -53,9 +53,32 @@ export default {
             "From Figma design to production. A fully responsive website tested across the most popular browsers.",
           framework: "vuejs",
           icons: [
-            { pre: "fab", suf: "html5", text: "1", id: "0" },
-            { pre: "fab", suf: "sass", text: "2", id: "1" },
-            { pre: "fas", suf: "mobile-alt", text: "3", id: "2" }
+            {
+              pre: "fab",
+              suf: "html5",
+              text: "Extensive use of html elements.",
+              id: "0"
+            },
+            {
+              pre: "fab",
+              suf: "sass",
+              text: "Extensive use of mixins, variables and css properties.",
+              id: "1"
+            },
+            {
+              pre: "fab",
+              suf: "bootstrap",
+              text:
+                "Used almost all of vue-bootstrap components and very familiar with their helper classes.",
+              id: "2"
+            },
+            {
+              pre: "fas",
+              suf: "mobile-alt",
+              text:
+                "Responsive, mobile first design all the way to extra large screens.",
+              id: "3"
+            }
           ]
         },
         {
@@ -66,8 +89,19 @@ export default {
             "SpiderAds is an automated advertising software that uses AI to effectively post digital ads through social media and Swedish news outlets. My role was to enhance the dashboard and display information in a more user friendly manner.",
           framework: "react",
           icons: [
-            { pre: "fab", suf: "js-square", text: "4", id: "0" },
-            { pre: "fas", suf: "broadcast-tower", text: "5", id: "1" }
+            {
+              pre: "fab",
+              suf: "js-square",
+              text:
+                "Extensive use of TypeScript definitions for components, functions and interfaces.",
+              id: "0"
+            },
+            {
+              pre: "fas",
+              suf: "broadcast-tower",
+              text: "Working mostly with API data.",
+              id: "1"
+            }
           ]
         }
       ]
@@ -125,17 +159,20 @@ export default {
     overflow: hidden
 
     &__content
-      padding: 1rem 3.5rem 2rem 3.5rem
+      padding: 1rem 3.5rem
       display: flex
       flex-direction: column
       justify-content: center
       align-items: center
-
+      p
+        padding-bottom: 1rem
       .icon-wrap
         width: auto
-        padding-bottom: 0.5rem
+        padding-bottom: 1rem
         .icon
           padding: 0 0.25rem
+      .carousel-view
+        .slide
 
 
   .caret-wrap
@@ -152,8 +189,4 @@ export default {
 
   img
     height: 4rem
-
-.carousel-view
-  
-
 </style>

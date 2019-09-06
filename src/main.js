@@ -11,7 +11,8 @@ import {
   faReact,
   faHtml5,
   faSass,
-  faJsSquare
+  faJsSquare,
+  faBootstrap
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faMobileAlt,
@@ -28,6 +29,7 @@ library.add(
   faHtml5,
   faSass,
   faJsSquare,
+  faBootstrap,
   faMobileAlt,
   faBroadcastTower
 );
