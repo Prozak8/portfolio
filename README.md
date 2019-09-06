@@ -1,29 +1,10 @@
-# portfolio2
+[Deployed Site](https://zdh.netlify.com/)
 
-## Project setup
-```
-npm install
-```
+### Built with:
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- [Pug HTML Syntax](https://pugjs.org/api/getting-started.html)
+- [SaSS](https://sass-lang.com/)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Notes:
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+All functionality is custom made. Only third party library is for popovers.
