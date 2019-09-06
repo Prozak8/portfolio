@@ -25,7 +25,7 @@
                 @click="carouselTextHandler(icon.id)"
                 :icon="[icon.pre, icon.suf]"
                 size="2x"
-                class="icon"
+                :class="[{'active': icon.text === carouselText}, 'icon grow']"
               )
             .carousel-view
               .slide {{ carouselText }}
@@ -135,12 +135,19 @@ export default {
       } else {
         this.carouselText = this.projects[this.projectIndex].icons[0].text;
       }
-    }
+    },
     // previous(projectId) {
     //   const last = this.slides.pop();
     //   this.slides = [last].concat(this.slides);
     // }
-  }
+    activeIcon(text, hexcode) {
+      return text === this.carouselText
+        ? "transform: scale(1.1); color: " + hexcode
+        : "";
+    }
+  },
+
+  computed: {}
 };
 </script>
 <style lang="sass" scoped>
@@ -171,6 +178,7 @@ export default {
         padding-bottom: 1rem
         .icon
           padding: 0 0.25rem
+
       .carousel-view
         .slide
 
@@ -189,4 +197,9 @@ export default {
 
   img
     height: 4rem
+
+.active 
+  color: $blue_medium
+  transform: scale(1.1)
+  
 </style>
