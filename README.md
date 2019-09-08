@@ -5,6 +5,6 @@
 - [Pug HTML Syntax](https://pugjs.org/api/getting-started.html)
 - [SaSS](https://sass-lang.com/)
 
-### Notes:
+### Dependencies:
 
-All functionality is custom made. Only third party library is for popovers.
+- [vue-js-popover](https://github.com/euvl/vue-js-popover)
