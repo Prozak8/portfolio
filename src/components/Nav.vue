@@ -1,18 +1,24 @@
-<template>
-  <div class="nav">
-    <router-link to="/">Home</router-link>
-    <router-link to="/about">About</router-link>
-    <router-link to="/projects">Projects</router-link>
-  </div>
+<template lang="pug">
+  .nav
+    router-link(
+      v-for="route in routes" 
+      :key="route.name"
+      :to="route.route"
+    ) {{ route.name }}
 </template>
 
 <script>
 export default {
   name: "Navigation",
   data() {
-    return {};
-  },
-  props: {}
+    return {
+      routes: [
+        { route: "/", name: "Home" },
+        { route: "/about", name: "About" },
+        { route: "/projects", name: "Projects" }
+      ]
+    };
+  }
 };
 </script>
 
@@ -20,19 +26,17 @@ export default {
 @import '@/styles/variables.sass'
 
 .nav 
-  width: calc(100% - 60px)
-  height: calc(100% - 60px)
-  padding: 30px
-  background-color: $black
   display: flex
   flex-direction: column
-  justify-content: center
+  justify-self: center
   align-items: center
   a 
+    width: 3.5rem
     color: $blue_light
     padding: 1rem 2rem
     margin-bottom: 1rem
     text-decoration: none
+    text-align: center
     background-color: $blue_dark
     border-radius: 2rem
     &.router-link-exact-active 
