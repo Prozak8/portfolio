@@ -30,6 +30,8 @@ export default {
   flex-direction: column
   justify-self: center
   align-items: center
+  @media screen and (max-width: $breakpoint-md)
+    flex-direction: row
   a 
     width: 3.5rem
     color: $blue_light
@@ -39,6 +41,10 @@ export default {
     text-align: center
     background-color: $blue_dark
     border-radius: 2rem
+    @media screen and (max-width: $breakpoint-md)
+      margin-bottom: 0
+      margin-left: 0.5rem
+      margin-right: 0.5rem
     &.router-link-exact-active 
       background-color: $blue_light
       color: $blue_dark

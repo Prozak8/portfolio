@@ -30,6 +30,9 @@ export default {
   height: 100vh
   width: 100vw
   display: flex
+  @media screen and (max-width: $breakpoint-md)
+    flex-direction: column
+    
   header
     background-color: $black
 </style>
