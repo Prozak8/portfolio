@@ -16,7 +16,8 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faMobileAlt,
-  faBroadcastTower
+  faBroadcastTower,
+  faChevronRight
 } from '@fortawesome/free-solid-svg-icons';
 
 Vue.config.productionTip = false;
@@ -31,7 +32,8 @@ library.add(
   faJsSquare,
   faBootstrap,
   faMobileAlt,
-  faBroadcastTower
+  faBroadcastTower,
+  faChevronRight
 );
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);

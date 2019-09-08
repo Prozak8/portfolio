@@ -1,36 +1,50 @@
-<template>
-  <div class="about">
-    <div class="about__inner flex-col-center-center">
-      <img :src="headshot" alt="zak" />
-      <h1>Zakary Howard</h1>
-      <h2>Frontend Developer</h2>
-      <p>
-        Creative copywriter turned frontend developer in the fire and flames of
-        <a
-          href="https://www.craftacademy.se"
-          target="_blank"
+<template lang="pug">
+  .about
+    .about__inner.flex-col-center-center
+      img(:src="headshot" alt="Picture of Zak")
+      h1 Zakary Howard
+      h2 Frontend Developer
+      p Creative copywriter turned frontend developer in the fire and flames of
+        a(
+          v-popover:CA
           class="hyperlink"
-        >@CraftAcademy.</a>
-      </p>
-      <p>I enjoy creating friendly user experiences and delivering good code quality, great documentation and clear communications between designer and programmer.</p>
-      <div class="social">
-        <a href="https://github.com/Prozak8" target="_blank" class="social__link">
-          <font-awesome-icon :icon="['fab', 'github-square']" size="3x" class="grow" />
-        </a>
-        <a href="https://www.linkedin.com/in/zdh" target="_blank" class="social__link">
-          <font-awesome-icon :icon="['fab', 'linkedin']" size="3x" class="grow" />
-        </a>
-      </div>
-    </div>
-  </div>
+        )  @CraftAcademy.
+      p I enjoy creating friendly user experiences and delivering good code quality, great documentation and clear communications between designer and programmer. 
+      .social
+        a(
+          v-for="link in links"
+          :key="link.id"
+          :href="link.url"
+          target="_blank" 
+          class="social__link"
+        )
+          font-awesome-icon(
+            :icon="['fab', link.iconName]"
+            size="3x"
+            class="grow"
+          )
+    popover(name="CA") 
+      a(href="#") Fullstack development bootcamp in Göteborg. 
+        font-awesome-icon(
+          :icon="['fas', 'chevron-right']"
+          size="1x"
+        )
+      
 </template>
 
 <script>
 import headshot from "@/assets/headshot.png";
+import craftAcademyLogo from "@/assets/craft-academy-logo.png";
+
 export default {
   data() {
     return {
-      headshot: headshot
+      headshot: headshot,
+      craftAcademyLogo: craftAcademyLogo,
+      links: [
+        { url: "https://github.com/Prozak8", iconName: "github-square", id: 0 },
+        { url: "https://www.linkedin.com/in/zdh", iconName: "linkedin", id: 1 }
+      ]
     };
   }
 };
