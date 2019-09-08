@@ -24,7 +24,7 @@
             class="grow"
           )
     popover(name="CA") 
-      a(href="#") Fullstack development bootcamp in Göteborg. 
+      a(href="https://www.craftacademy.se/") Fullstack development bootcamp in Göteborg. 
         font-awesome-icon(
           :icon="['fas', 'chevron-right']"
           size="1x"
