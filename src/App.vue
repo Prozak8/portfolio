@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <div class="col">
+    <header class="col flex-center-center">
       <navigation />
-    </div>
+    </header>
     <div class="col">
       <router-view />
     </div>
@@ -30,4 +30,6 @@ export default {
   height: 100vh
   width: 100vw
   display: flex
+  header
+    background-color: $black
 </style>

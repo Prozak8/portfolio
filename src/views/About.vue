@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <div class="about__inner">
+    <div class="about__inner flex-col-center-center">
       <img :src="headshot" alt="zak" />
       <h1>Zakary Howard</h1>
       <h2>Frontend Developer</h2>
@@ -13,14 +13,14 @@
         >@CraftAcademy.</a>
       </p>
       <p>I enjoy creating friendly user experiences and delivering good code quality, great documentation and clear communications between designer and programmer.</p>
-    </div>
-    <div class="social">
-      <a href="https://github.com/Prozak8" target="_blank" class="social__link">
-        <font-awesome-icon :icon="['fab', 'github-square']" size="3x" class="grow" />
-      </a>
-      <a href="https://www.linkedin.com/in/zdh" target="_blank" class="social__link">
-        <font-awesome-icon :icon="['fab', 'linkedin']" size="3x" class="grow" />
-      </a>
+      <div class="social">
+        <a href="https://github.com/Prozak8" target="_blank" class="social__link">
+          <font-awesome-icon :icon="['fab', 'github-square']" size="3x" class="grow" />
+        </a>
+        <a href="https://www.linkedin.com/in/zdh" target="_blank" class="social__link">
+          <font-awesome-icon :icon="['fab', 'linkedin']" size="3x" class="grow" />
+        </a>
+      </div>
     </div>
   </div>
 </template>
