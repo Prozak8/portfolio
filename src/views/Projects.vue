@@ -18,6 +18,7 @@
         .accordion-show(v-if="projectIndex === project.id")
           .accordion-show__content 
             p {{ project.description }}
+            a(:href="project.path" target="_blank") Homepage
             .icon-wrap
               font-awesome-icon(
                 v-for="icon in project.icons"
@@ -50,6 +51,7 @@ export default {
           description:
             "Working with a graphic designer to deliver an entire website for a healthcare company based in Silicon Valley. Fully responsive through all browsers and devices.",
           framework: "vuejs",
+          path: "https://stage.plumcare.ixlayer.com/en/home",
           icons: [
             {
               pre: "fab",
@@ -87,6 +89,7 @@ export default {
           description:
             "SpiderAds is an automated advertising software that uses AI to effectively post digital ads through social media and Swedish news outlets. My role was to enhance the dashboard and display information in a more user friendly manner.",
           framework: "react",
+          path: "https://spiderads.eu",
           icons: [
             {
               pre: "fab",
@@ -160,7 +163,7 @@ export default {
       flex-direction: column
       justify-content: center
       align-items: center
-      p
+      p, a
         text-align: center
         padding-bottom: 1rem
       .icon-wrap
