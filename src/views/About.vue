@@ -4,7 +4,7 @@
       p Creative copywriter turned frontend developer in the fire and flames of
         a(
           v-popover:CA
-          class="hyperlink"
+          class="hyperlink orange"
         )  @CraftAcademy.
       p I enjoy creating friendly user experiences and delivering good code quality, great documentation and clear communications between designer and programmer. 
       .social

@@ -30,6 +30,12 @@
               )
             .carousel-view
               .slide {{ carouselText }}
+    h4(
+      href="https://github.com/Prozak8" 
+      target="_blank"
+      class="hyperlink"
+      style="margin-top: auto; text-align: center;"
+      ) See more on GitHub
 </template>
 
 <script>
@@ -145,38 +151,41 @@ export default {
 <style lang="sass" scoped>
 @import '@/styles/variables.sass'
 
-.accordion
-  width: 90%
-  margin: auto
-  border: solid 1px $black
-  border-radius: 5px
-  &:nth-child(1)
-    margin-bottom: 2rem
+.container 
+  display: flex
+  flex-direction: column
+  .accordion
+    width: 90%
+    margin: 0 auto
+    border: solid 1px $black
+    border-radius: 5px
+    &:nth-child(1)
+      margin-bottom: 2rem
 
-  &-show
-    transition: 300ms ease-out
-    overflow: hidden
+    &-show
+      transition: 300ms ease-out
+      overflow: hidden
 
-    &__content
-      padding: 1rem 3.5rem
-      display: flex
-      flex-direction: column
-      justify-content: center
-      align-items: center
-      p, a
-        text-align: center
-        padding-bottom: 1rem
-      .icon-wrap
-        width: auto
-        padding-bottom: 1rem
-        .icon
-          padding: 0 0.25rem
-      .carousel-view
-        max-width: 250px
-        text-align: center
-        .slide
-          font-size: 14px
-          font-style: italic
+      &__content
+        padding: 1rem 3.5rem
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        p, a
+          text-align: center
+          padding-bottom: 1rem
+        .icon-wrap
+          width: auto
+          padding-bottom: 1rem
+          .icon
+            padding: 0 0.25rem
+        .carousel-view
+          max-width: 250px
+          text-align: center
+          .slide
+            font-size: 14px
+            font-style: italic
 
   .caret-wrap
     width: 3.25rem
