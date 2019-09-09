@@ -54,8 +54,9 @@ export default {
   justify-content: center
   &__inner
     padding: 40px
-    h2, p
+    p
       margin-bottom: 1rem
+      text-align: center
   .social
     &__links_wrap
       display: flex
