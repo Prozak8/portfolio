@@ -28,24 +28,46 @@ export default {
 .nav 
   display: flex
   flex-direction: column
-  justify-self: center
+  justify-content: center
   align-items: center
   @media screen and (max-width: $breakpoint-md)
     flex-direction: row
+    flex-wrap: wrap
   a 
     width: 3.5rem
     color: $blue_light
-    padding: 1rem 2rem
-    margin-bottom: 1rem
-    text-decoration: none
+    padding: 0.75rem 1.5rem
+    margin: 0.5rem    
+    text-decoration: none       
     text-align: center
     background-color: $blue_dark
     border-radius: 2rem
     @media screen and (max-width: $breakpoint-md)
-      margin-bottom: 0
-      margin-left: 0.5rem
-      margin-right: 0.5rem
+
     &.router-link-exact-active 
       background-color: $blue_light
       color: $blue_dark
 </style>
+// .nav 
+//   display: flex
+//   flex-direction: column
+//   justify-self: center
+//   align-items: center
+//   @media screen and (max-width: $breakpoint-md)
+//     flex-direction: row
+//   a 
+//     width: 3.5rem
+//     color: $blue_light
+//     padding: 1rem 2rem
+//     margin-bottom: 1rem
+//     text-decoration: none
+//     text-align: center
+//     background-color: $blue_dark
+//     border-radius: 2rem
+//     @media screen and (max-width: $breakpoint-md)
+//       margin-bottom: 0
+//       margin-left: 0.5rem
+//       margin-right: 0.5rem
+//     &.router-link-exact-active 
+//       background-color: $blue_light
+//       color: $blue_dark

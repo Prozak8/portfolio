@@ -1,9 +1,6 @@
 <template lang="pug">
   .about
     .about__inner.flex-col-center-center
-      img(:src="headshot" alt="Picture of Zak")
-      h1 Zakary Howard
-      h2 Frontend Developer
       p Creative copywriter turned frontend developer in the fire and flames of
         a(
           v-popover:CA
@@ -33,14 +30,10 @@
 </template>
 
 <script>
-import headshot from "@/assets/headshot.png";
-import craftAcademyLogo from "@/assets/craft-academy-logo.png";
-
 export default {
   data() {
     return {
       headshot: headshot,
-      craftAcademyLogo: craftAcademyLogo,
       links: [
         { url: "https://github.com/Prozak8", iconName: "github-square", id: 0 },
         { url: "https://www.linkedin.com/in/zdh", iconName: "linkedin", id: 1 }
@@ -63,13 +56,6 @@ export default {
     padding: 40px
     h2, p
       margin-bottom: 1rem
-    h1
-      font-size: 50px
-    h2
-      font-size: 30px
-    img
-      width: 15rem
-      border-radius: 50%
   .social
     &__links_wrap
       display: flex
