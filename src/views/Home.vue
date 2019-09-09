@@ -27,12 +27,18 @@ export default {
 <style lang="sass" scoped>
 @import '@/styles/variables.sass'
 h1
-  font-size: 50px
+  font-size: 35px
+  @media screen and (min-width: $breakpoint-md)
+    font-size: 50px
 h2
-  font-size: 30px
+  font-size: 20px
+  @media screen and (min-width: $breakpoint-md)
+    font-size: 35px
 img
-  width: 20rem
+  width: 12.5rem
   border-radius: 50%
+  @media screen and (min-width: $breakpoint-md)
+    width: 20rem
 p
   margin-top: 3rem
 svg
