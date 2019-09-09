@@ -33,7 +33,6 @@
 export default {
   data() {
     return {
-      headshot: headshot,
       links: [
         { url: "https://github.com/Prozak8", iconName: "github-square", id: 0 },
         { url: "https://www.linkedin.com/in/zdh", iconName: "linkedin", id: 1 }

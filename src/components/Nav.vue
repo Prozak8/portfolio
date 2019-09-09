@@ -42,7 +42,10 @@ export default {
     text-align: center
     background-color: $blue_dark
     border-radius: 2rem
-    @media screen and (max-width: $breakpoint-md)
+    @media screen and (min-width: $breakpoint-md)
+      width: 5rem
+      margin: 1rem  
+      padding: 1rem 1.75rem  
 
     &.router-link-exact-active 
       background-color: $blue_light

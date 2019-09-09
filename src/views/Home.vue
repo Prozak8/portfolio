@@ -24,7 +24,7 @@ h1
 h2
   font-size: 30px
 img
-  width: 15rem
+  width: 20rem
   border-radius: 50%
 
 </style>
