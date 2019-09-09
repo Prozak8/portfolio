@@ -17,7 +17,8 @@ import {
 import {
   faMobileAlt,
   faBroadcastTower,
-  faChevronRight
+  faChevronRight,
+  faEnvelope
 } from '@fortawesome/free-solid-svg-icons';
 
 Vue.config.productionTip = false;
@@ -33,7 +34,8 @@ library.add(
   faBootstrap,
   faMobileAlt,
   faBroadcastTower,
-  faChevronRight
+  faChevronRight,
+  faEnvelope
 );
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
