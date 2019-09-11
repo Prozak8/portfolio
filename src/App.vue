@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <header class="col flex-center-center">
+    <div class="col flex-center-center">
       <navigation />
-    </header>
+    </div>
     <div class="col">
       <router-view />
     </div>
@@ -32,7 +32,4 @@ export default {
   display: flex
   @media screen and (max-width: $breakpoint-md)
     flex-direction: column
-    
-  header
-    background-color: $black
 </style>

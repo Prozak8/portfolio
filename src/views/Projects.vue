@@ -200,5 +200,5 @@ export default {
     align-items: center
 
   img
-    height: 4rem
+    width: 12rem
 </style>
