@@ -1,40 +1,37 @@
 <template lang="pug">
-  .container
+  section.section-projects
     .accordion(v-for="project in projects")
-      .row
-        .caret-wrap
+      .accordion__header
+        .accordion__header__caret
           font-awesome-icon(
             :class="[projectIndex === project.id ? project.active : '']"
             :icon="['fab', `${project.framework}`]" 
             @click="show(project.id)"
-            size="3x"
+            size="4x"
           )
-        .col-content
-          img(:src="project.image")
+        img(:src="project.image" class="accordion__header__image")
       transition(name="fade"
         v-on:before-enter="beforeEnter" v-on:enter="enter"
         v-on:before-leave="beforeLeave" v-on:leave="leave"
       )
-        .accordion-show(v-if="projectIndex === project.id")
-          .accordion-show__content 
+        .accordion__show(v-if="projectIndex === project.id")
+          .accordion__show__paragraph
             p {{ project.description }}
-            a(:href="project.path" target="_blank") Homepage
-            .icon-wrap
+            a(:href="project.path" target="_blank" class="btn-text u-mb-2") Homepage
+            .accordion__show__icons
               font-awesome-icon(
                 v-for="icon in project.icons"
                 :key="icon.suf"
                 @click="carouselTextHandler(icon.id)"
                 :icon="[icon.pre, icon.suf]"
-                size="2x"
+                size="3x"
                 :class="[icon.text === carouselText ? 'grow-active' : 'grow', 'icon']"
               )
-            .carousel-view
-              .slide {{ carouselText }}
-    h4(
+            .slide {{ carouselText }}
+    a(
       href="https://github.com/Prozak8" 
       target="_blank"
-      class="hyperlink"
-      style="margin-top: auto; text-align: center;"
+      class="u-hyperlink u-text-center"
       ) See more on GitHub
 </template>
 
@@ -151,54 +148,52 @@ export default {
 <style lang="sass" scoped>
 @import '@/styles/variables.sass'
 
-.container 
+.section-projects 
   display: flex
   flex-direction: column
-  .accordion
-    width: 90%
-    margin: 0 auto
-    border: solid 1px $black
-    border-radius: 5px
-    &:nth-child(1)
-      margin-bottom: 2rem
+  padding: 2rem 4rem
 
-    &-show
-      transition: 300ms ease-out
-      overflow: hidden
+.accordion
+  width: 100%
+  margin: 0 auto
+  box-shadow: 0 1.5rem 2rem rgba($color-black, .25)
+  &:not(:last-child)
+    margin-bottom: 2rem
+    
+  &__header
+    position: relative
+    height: 6rem
+    &__caret
+      position: absolute
+      top: 1rem
+      left: .5rem
+    &__image
+      position: absolute
+      top: 1rem
+      left: 50%
+      width: 15rem
+      transform: translateX(-50%)   
 
-      &__content
-        padding: 1rem 3.5rem
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
-        p, a
-          text-align: center
-          padding-bottom: 1rem
-        .icon-wrap
-          width: auto
-          padding-bottom: 1rem
-          .icon
-            padding: 0 0.25rem
-        .carousel-view
-          max-width: 250px
-          text-align: center
-          .slide
-            font-size: 14px
-            font-style: italic
-
-  .caret-wrap
-    width: 3.25rem
-    position: absolute
-    padding-left: 5px
-
-  .col-content
-    margin: 0 auto
-
-  .row
-    display: flex
-    align-items: center
-
-  img
-    width: 12rem
+  &__show
+    transition: .3s ease-out
+    overflow: hidden
+    &__paragraph
+      padding: 1rem
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      p
+        font-size: 1.5rem
+        text-align: center
+        padding-bottom: 1rem
+    &__icons 
+      margin-bottom: 1rem
+      .icon
+        margin: 0 .5rem
+    .slide
+      font-size: 14px
+      font-style: italic
+      max-width: 250px
+      text-align: center
 </style>

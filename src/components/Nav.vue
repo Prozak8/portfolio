@@ -4,20 +4,15 @@
       v-for="route in routes" 
       :key="route.name"
       :to="route.route"
+      class="btn"
     ) {{ route.name }}
 </template>
 
 <script>
 export default {
   name: "Navigation",
-  data() {
-    return {
-      routes: [
-        { route: "/", name: "Home" },
-        { route: "/about", name: "About" },
-        { route: "/projects", name: "Projects" }
-      ]
-    };
+  props: {
+    routes: Array
   }
 };
 </script>
@@ -27,25 +22,34 @@ export default {
 
 .nav 
   display: flex
-  flex-direction: column
+  flex-direction: row
+  flex-wrap: wrap
   justify-content: center
   align-items: center
-  @media screen and (max-width: $breakpoint-md)
-    flex-direction: row
-    flex-wrap: wrap
-  a 
-    width: 3.5rem
+  padding: 1rem
+  @media screen and (min-width: $breakpoint-md)
+    flex-direction: column
+
+  .btn:link,
+  .btn:visited
+    width: 10rem
+    font-size: 1.5rem
     color: $blue_light
-    padding: 0.75rem 1.5rem
-    margin: 0.5rem    
+    padding: .75rem 2rem
+    margin: .5rem
     text-decoration: none       
     text-align: center
     background-color: $blue_dark
     border-radius: 2rem
+    transition: all .2s
+    &:hover
+      transform: translateY(-2px)
+    &:active
+      transform: translateY(0px)
     @media screen and (min-width: $breakpoint-md)
-      width: 5rem
-      margin: 1rem  
-      padding: 1rem 1.75rem  
+      width: 12.5rem
+      font-size: 1.75rem
+      margin: .75rem
 
     &.router-link-exact-active 
       background-color: $blue_light

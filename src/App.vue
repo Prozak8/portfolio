@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <div class="col flex-center-center">
-      <navigation />
+    <div class="col--nav">
+      <navigation :routes="routes" />
     </div>
-    <div class="col">
+    <div class="col--content">
       <router-view />
     </div>
   </div>
@@ -16,6 +16,15 @@ export default {
   name: "app",
   components: {
     navigation: Navigation
+  },
+  data() {
+    return {
+      routes: [
+        { route: "/", name: "Home" },
+        { route: "/about", name: "About" },
+        { route: "/projects", name: "Projects" }
+      ]
+    };
   }
 };
 </script>
@@ -23,13 +32,14 @@ export default {
 <style lang="sass">
 @import '@/styles/main.sass'
 #app 
-  font-family: 'Avenir', Helvetica, Arial, sans-serif
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-  color: $black
+  color: $color-black
+  display: flex
+  flex-direction: column
+  background-color: $color-white
   height: 100vh
   width: 100vw
-  display: flex
-  @media screen and (max-width: $breakpoint-md)
-    flex-direction: column
+  @media screen and (min-width: $breakpoint-md)
+    flex-direction: row
 </style>

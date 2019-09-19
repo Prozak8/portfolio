@@ -1,8 +1,8 @@
 <template lang="pug">
   .card
-    header.card-header
-      ul.tab-heads
-        li.tab-head(
+    header.card__header
+      ul.tabs
+        li.tabs__tab(
           v-for="tab in tabs"
           :key="tab"
           v-bind:class="{'tab-head--active': activeTab === tab}"
@@ -46,37 +46,47 @@ export default {
 @import '@/styles/variables.sass'
 
 .card 
-  background-color: #fff
+  background-color: $color-white
   @media screen and (min-width: $breakpoint-md)
     position: absolute
-    min-height: 300px
-    top: calc(50% - 125px)
+    min-height: 30rem
+    top: calc(50% - 12.5rem)
+  @media screen and (min-width: $breakpoint-lg)
+    display: flex
 
+  &__header 
+    padding: 1rem
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 1rem
 
-.card-header 
-  padding: 10px
-  display: flex
-  align-items: center
-  justify-content: center
-  padding: 8px
-
-.tab-heads 
+.tabs
   display: flex
   flex-wrap: wrap
   justify-content: space-around
   list-style: none
-
-.tab-head 
-  padding: 5px 18px
-  border-radius: 4px
-  position: relative
-  cursor: pointer
-  background-color: $blue_dark
-  color: $blue_light
-  margin: 4px
+  @media screen and (min-width: $breakpoint-lg)
+    justify-content: start
+  &__tab
+    font-size: 1.25rem
+    text-align: center
+    width: 7.5rem
+    padding: .5rem 2rem
+    border-radius: .5rem
+    position: relative
+    cursor: pointer
+    background-color: $blue_dark
+    color: $blue_light
+    margin: .5rem
+    transition: all .2s
+    &:hover
+      transform: translateY(-2px)
+    &:active
+      transform: translateY(0px)
 
 .tab-head--active 
   background-color: $blue_light
   color: $blue_dark
-  transition: 0.4s
+  transition: .2s
 </style>

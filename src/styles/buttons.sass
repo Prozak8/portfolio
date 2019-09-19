@@ -1,0 +1,14 @@
+.btn-text
+  &:link,
+  &:visited
+    font-size: 1.5rem
+    color: $color-black
+    text-decoration: none
+    transition: all .2s
+    @media screen and (max-width: $breakpoint-md)
+      border-bottom: 1px solid $blue_dark
+  &:hover
+    border-bottom: 1px solid $blue_dark
+    transform: translateY(-2px)
+  &:active
+    transform: translateY(0px)
