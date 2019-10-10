@@ -43,7 +43,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-@import '@/styles/variables.sass'
+@import '@/styles/abstracts/_variables.sass'
 
 .card 
   background-color: $color-white

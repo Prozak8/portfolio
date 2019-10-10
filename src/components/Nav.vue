@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style scoped lang="sass">
-@import '@/styles/variables.sass'
+@import '@/styles/abstracts/_variables.sass'
 
 .nav 
   display: flex

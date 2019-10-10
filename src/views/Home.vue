@@ -48,7 +48,7 @@ export default {
 };
 </script>
 <style lang="sass" scoped>
-@import '@/styles/variables.sass'
+@import '@/styles/abstracts/_variables.sass'
 
 .home
   display: flex
