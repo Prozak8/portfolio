@@ -9,9 +9,8 @@
           v-on:click="switchTab(tab)"
         )
           slot(:name="tabHeadSlotName(tab)") {{ tab }}
-    main.card-body
-      .tab-panel
-        slot(:name="tabPanelSlotName")
+    main.tab-panel
+      slot(:name="tabPanelSlotName")
 </template>
 
 <script>

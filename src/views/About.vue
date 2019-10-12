@@ -27,8 +27,7 @@ export default {
   },
   data() {
     return {
-      json: json,
-      initialTab: "who"
+      json: json
     };
   }
 };
@@ -42,13 +41,6 @@ export default {
   width: 100%
   display: flex
   flex-direction: column
-  .social
-    &__links_wrap
-      display: flex
-      flex-direction: row
-    &__link
-      color: $color-black
-      padding-right: .5rem
 .paragraph
   font-size: 1.5rem
   padding: 1rem 2.5rem
